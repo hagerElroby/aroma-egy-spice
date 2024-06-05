@@ -36,8 +36,7 @@
 
         // script.js
 var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 4,
-    spaceBetween: 10,
+    
     loop: true,
     autoplay: {
         delay: 3000,
@@ -47,13 +46,30 @@ var swiper = new Swiper('.swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 90,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        },
+    },
 });
 
 
 // Toggle active class
 function toggleClassActive () {
      const links = document.querySelectorAll('ul li a');
-console.log(links)
     // Function to remove active class from all links
     function removeActiveClasses() {
       links.forEach(link => link.classList.remove('active'));
@@ -93,4 +109,11 @@ function openMenu() {
 }
 
 openMenu();
+
+//get current date
+
+const myDate = new Date();
+const dateSpan = document.getElementById("date");
+
+dateSpan.innerHTML = myDate.getFullYear();
 

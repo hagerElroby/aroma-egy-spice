@@ -109,87 +109,70 @@
                             <img src="./img/1.png" alt>
                         </div>
                         <ul class="links">
-                            <li class="link-item">Home</li>
-                            <li class="link-item">About Us</li>
-                            <li class="link-item">Our Products</li>
-                            <li class="link-item">Production</li>
-                            <li class="link-item">Certification</li>
-                            <li class="link-item">Gallery</li>
-                            <li class="link-item">Contact Us</li>
+                                <a href="index.html" class="active-link">
+                                 <li class="link-item">Home</li> 
+                                </a>
+                            <a href="about.html"><li class="link-item">About Us</li></a>
+                                <a href="ourProducts.html">
+                                   <li class="link-item"> Our Products</li>
+                                </a>
+                                <a href="production.html">
+                                    <li class="link-item">Production</li>
+                                </a>
+                                <a href="certification.html">
+                                   <li class="link-item">Certification </li>
+                                </a>
+                                <a href="gallery.html">
+                                  <li class="link-item"> Gallery </li>
+                                </a>
+                                <a href="contact.html">
+                                   <li class="link-item">Contact Us</li>
+                                </a>
                         </ul>
                     </div>
                 </div>
             </nav>
             <!--Nav links For Mopile-->
-            <div class="top-bar">
-                <div class="top-bar-left">
-                    <img src="./img/logo.png" alt>
-                </div>
-                <div class="top-bar-right">
-                    <a href> <i class="fa-solid fa-bars"></i></a>
+           <div class="top-bar">
+            <div class="top-bar-left">
+                <img src="./img/logo.png" alt="Logo">
+            </div>
+            <div class="top-bar-right">
+                <a href="#" class="top-bar-icon"><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </div>
+
+        <div class="side" id="side">
+            <div class="close-wrapper" id="close-wrapper">
+                <a href="#" class="close">
+                    <i class="fa-solid fa-x"></i>
+                </a>
+            </div>
+            <div class="menu-wrapper">
+                <ul class="menu-main-menu">
+                    <li class="menu-item"><a href="index.html" class="active">Home</a></li>
+                    <li class="menu-item"><a href="about.html">About Us</a></li>
+                    <li class="menu-item"><a href="ourProducts.html">Our Products</a></li>
+                    <li class="menu-item"><a href="production.html">Production</a></li>
+                    <li class="menu-item"><a href="certification.html">Certification</a></li>
+                    <li class="menu-item"><a href="gallery.html">Gallery</a></li>
+                    <li class="menu-item"><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="info">
+                    <p>
+                        <i class="fas fa-globe"></i>
+                        <span>Aroma Egy Spices</span>
+                        <p>Your one-stop solution for all your needs.</p>
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i> 0352 226 7226
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope"></i> xyz@hurbs.com
+                    </p>
                 </div>
             </div>
-
-            <div class="side" id="side">
-                <div class="close-wrapper">
-                    <a href="#" class="close">
-                        <i class="fa-solid fa-x"></i>
-                    </a>
-                </div>
-                <div class="menu-wrapper">
-                    <ul id="menu-main-menu">
-                        <li id="menu-item-10" class="menu-item">
-                            <a href="#" class="active">
-                                <span>Home</span>
-                            </a>
-                        </li>
-                        <li id="menu-item-10" class="menu-item">
-                            <a href="#">
-                                <span>About Us</span>
-                            </a>
-                        </li>
-                        <li id="menu-item-10" class="menu-item">
-                            <a href="#">
-                                <span>Our Products</span>
-                            </a>
-                        </li>
-                        <li id="menu-item-10" class="menu-item">
-                            <a href="#">
-                                <span>Production</span>
-                            </a>
-                        </li>
-                        <li id="menu-item-10" class="menu-item">
-                            <a href="#">
-                                <span>Certification</span>
-                            </a>
-                        </li>
-                        <li id="menu-item-10" class="menu-item">
-                            <a href="#">
-                                <span>Gallery</span>
-                            </a>
-                        </li>
-                        <li id="menu-item-10" class="menu-item">
-                            <a href="#">
-                                <span>Contact Us</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="info">
-                        <p>
-                            <i class="fas fa-globe"></i>
-                            <span>Aroma Egy Spices</span>
-                            <p>Your one-stop solution for all your needs.</p>
-                        </p>
-                        <p>
-                            <i class="fa-solid fa-phone"></i> 0352 226 7226
-                        </p>
-                        <p>
-                            <i class="fa-solid fa-envelope"></i> xyz@hurbs.com
-                        </p>
-                    </div>
-
-                </div>
-            </div>
+        </div>
             <section class="header-section">
                 <div class="slider">
                     <div class="slides">
@@ -225,6 +208,7 @@
         </header>
 
         <main>
+            <!-- About , Vision , Mission -->
             <section class="our-company">
                 <div class="container">
                     <div class="about-img">
@@ -430,13 +414,13 @@
                 </div>
             </div>
         </footer>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
             integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        
+        <!-- code for magnific popup  -->
         <script>
                 $(document).ready(function() {
                     $('.project').magnificPopup({
@@ -448,6 +432,7 @@
                     });
                 });
         </script>
+        <script src="js/generalScript.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

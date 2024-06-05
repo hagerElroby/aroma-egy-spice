@@ -67,53 +67,6 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 
-// Toggle active class
-function toggleClassActive () {
-     const links = document.querySelectorAll('ul li a');
-    // Function to remove active class from all links
-    function removeActiveClasses() {
-      links.forEach(link => link.classList.remove('active'));
-    }
-
-    // Add event listener to each link
-    links.forEach(link => {
-      link.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default link behavior
-        removeActiveClasses(); // Remove active class from all links
-        this.classList.add('active'); // Add active class to the clicked link
-      });
-    });
-
-    // Ensure the first item has the active class by default
-    if (links.length > 0) {
-      links[0].classList.add('active');
-}
-}
-
-toggleClassActive()
 
 
-// Open side menu
-function openMenu() {
-    const menuIcon = document.querySelector('.top-bar-right');
-    const side = document.getElementById('side'); // Get the first element with the class 'side'
-    
-    menuIcon.addEventListener('click', function(event) {
-        event.preventDefault();
-        side.style.right = "0"; // Correct syntax to change display property
-    });
-    side.addEventListener('click', function(event) {
-        event.preventDefault();
-        side.style.right = "-300px"; // Correct syntax to change display property
-    });
-}
-
-openMenu();
-
-//get current date
-
-const myDate = new Date();
-const dateSpan = document.getElementById("date");
-
-dateSpan.innerHTML = myDate.getFullYear();
 

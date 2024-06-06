@@ -585,3 +585,161 @@ footer .footer-columns .column{
 }
 
 }
+
+/* ==============ABOUT US PAGE =======*/
+      
+main .about {
+      background-image: url(../img/about22.jpg);
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position: top left; 
+      position: relative;
+      width: 100%;
+      height: 50vh;
+      margin-bottom: 70px;
+      
+}
+main .about .layout {
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background-color: rgba(0, 0, 0, 0.5);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+main .about h2 {
+      color: #fff; 
+      font-size: 40px; 
+      letter-spacing: 3px;
+       text-shadow:  0 .3rem .5rem #4f7069;
+}
+
+
+
+main .aroma-egy ,
+main .our-vision,
+main .our-mission{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 30px 0;
+     height: 500px;
+}
+main .aroma-egy .about-aroma, 
+main .our-vision .aroma-vision,
+main .our-mission .aroma-mission{
+      flex: 1.3; 
+      margin-right: 20px;
+}
+
+main .our-vision .aroma-vision{
+      flex: 1.3; 
+      margin-right:0px;
+      margin-left: 20px;
+}
+main .aroma-egy .about-aroma h3,
+main .vission-header h3,
+main .our-mission .aroma-mission h3{
+      font-size: 30px;
+      color: var(--main-color);
+      margin-bottom: 15px;
+}
+main .aroma-egy .about-aroma h4,
+main .vission-header  h4 ,
+main .our-mission .aroma-mission h4 {
+      font-size: 25px;
+      color: var(--main-color);
+      font-weight: normal;
+      margin-bottom: 15px;    
+}
+
+main .vission-header {
+width: 80%;
+      margin: auto;
+      text-align: center;
+}
+
+main .aroma-egy .about-aroma p ,
+main .our-vision .aroma-vision p ,
+main .our-mission .aroma-mission p {
+      margin-bottom: 15px;  
+      line-height: 28px;  
+      font-size: 16px;
+}
+main .aroma-egy .aroma-img ,
+main .our-vision .vision-img ,
+main .our-mission .mission-img {
+      flex: 1;
+      height: 500px;
+      width: 100%;
+}
+main .aroma-egy .aroma-img img,
+main .our-vision .vision-img img,
+main .our-mission .mission-img img{
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+}
+main .aroma-egy .about-aroma {
+      display: flex;
+    flex-direction: column;
+}
+main .aroma-egy .btn {
+      border-radius: 0px;
+      width: 11rem;
+      padding: 15px;
+}
+main .aroma-egy .btn span{
+     margin-left: 15px;
+}
+
+
+/* ==============MEDIA QUERIES FOR TABLETS AND MOBILE PHONES for about page =======*/
+@media screen and (max-width:765px) {
+      main .aroma-egy ,
+main .our-vision,
+main .our-mission{
+     flex-direction: column;
+     height: auto;
+     
+} 
+main .aroma-egy .about-aroma, 
+main .our-vision .aroma-vision,
+main .our-mission .aroma-mission{ 
+      margin-right:0;
+      margin-bottom: 20px;
+}
+main .aroma-egy .aroma-img img,
+main .our-vision .vision-img img,
+main .our-mission .mission-img img{
+      height: 300px;
+      width: 80%;
+      margin: 20px auto;
+}
+main .aroma-egy .about-aroma h3,
+main .vission-header h3,
+main .our-mission .aroma-mission h3{
+      font-size: 25px
+}
+main .aroma-egy .about-aroma h4,
+main .vission-header  h4 ,
+main .our-mission .aroma-mission h4 {
+      font-size: 20px
+}
+
+main .vission-header {
+width: 90%;
+      margin: 0 10px;
+      text-align: left;
+}
+
+main .aroma-egy .btn {
+     margin: auto;
+     justify-self: center;
+}
+}

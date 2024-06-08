@@ -887,4 +887,13 @@ main .contact-us .contact-us-info > div p{
             height: auto;
             margin: 30px auto;
       }
+
+      main .contact-us .contact-us-info > div span{
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+}
+main .contact-us .contact-us-info > div p{
+      font-size: 0.9rem
+}
+
 }

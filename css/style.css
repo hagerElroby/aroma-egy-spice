@@ -41,9 +41,11 @@ body {
       width: 95%;
       margin: 0 auto;
 }
+
 a {
       color: #000;
 }
+
 img {
       display: block;
       width: 100%;
@@ -129,141 +131,145 @@ nav .content ul.links {
 nav .content ul.links li.link-item {
       margin: 0 20px;
 }
+
 nav .content ul.links a.active-link {
       color: var(--second-color);
 }
+
 nav .content ul.links a.active-link::after,
-nav .content ul.links a::after{
+nav .content ul.links a::after {
       background-color: var(--second-color);
       content: "";
-    display: block;
-    width: 0;
-    height: 3px;
-    margin-top: 2px;
-    transition: width 0.5s;
-    -webkit-transition: width 0.5s;
-    -moz-transition: width 0.5s;
-    -ms-transition: width 0.5s;
-    -o-transition: width 0.5s;
+      display: block;
+      width: 0;
+      height: 3px;
+      margin-top: 2px;
+      transition: width 0.5s;
+      -webkit-transition: width 0.5s;
+      -moz-transition: width 0.5s;
+      -ms-transition: width 0.5s;
+      -o-transition: width 0.5s;
 }
+
 nav .content ul.links a:hover::after {
       width: 70px;
       margin: auto;
 }
+
 nav .content ul.links a.active-link::after {
-    width: 70px;
-    margin: auto;
+      width: 70px;
+      margin: auto;
 }
 
 
 header .top-bar {
-    display: none;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5px;
+      display: none;
+      justify-content: space-between;
+      align-items: center;
+      margin: 5px;
 }
 
 header .top-bar .top-bar-left {
-    width: 50px;
-    height: 50px;
+      width: 50px;
+      height: 50px;
 }
 
 header .top-bar .top-bar-right {
-    position: relative;
+      position: relative;
 }
 
 header .top-bar .top-bar-right a.top-bar-icon {
-    font-size: 22px;
-    line-height: 34px;
-    position: absolute;
-    right: 5px;
-    top: 50%;
-    margin-top: -17px;
-    width: 34px;
-    height: 34px;
-    text-align: center;
-    border-radius: 3px;
-    z-index: 200;
-    background-color: var(--main-color);
-    color: var(--white-color);
+      font-size: 22px;
+      line-height: 34px;
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      margin-top: -17px;
+      width: 34px;
+      height: 34px;
+      text-align: center;
+      border-radius: 3px;
+      z-index: 200;
+      background-color: var(--main-color);
+      color: var(--white-color);
 }
 
 header .side {
-    z-index: 2001;
-    position: fixed;
-    top: 0;
-    right: -250px;
-    width: 250px;
-    height: 100vh;
-    margin-left: auto;
-    background-color: #004438;
-    transition: all 0.7s ease;
+      z-index: 2001;
+      position: fixed;
+      top: 0;
+      right: -250px;
+      width: 250px;
+      height: 100vh;
+      margin-left: auto;
+      background-color: #004438;
+      transition: all 0.7s ease;
 }
 
 header .side .close-wrapper {
-    width: 100%;
-    text-align: end;
-    padding: 20px;
+      width: 100%;
+      text-align: end;
+      padding: 20px;
 }
 
 header .side .close-wrapper .close {
-    width: 70px;
-    height: 70px;
-    color: var(--white-color);
+      width: 70px;
+      height: 70px;
+      color: var(--white-color);
 }
 
 header .side .menu-wrapper {
-    width: 100%;
-    height: 100%;
+      width: 100%;
+      height: 100%;
 }
 
 header .side .menu-wrapper ul {
-    display: flex;
-    flex-direction: column;
+      display: flex;
+      flex-direction: column;
 }
 
 header .side .menu-wrapper ul li {
-    margin: 10px 15px;
+      margin: 10px 15px;
 }
 
 .menu-wrapper ul a {
-    color: var(--white-color);
+      color: var(--white-color);
 }
 
 .menu-wrapper ul a.active::after,
 .menu-wrapper ul a::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 3px;
-    background-color: #f5f5f3;
-    margin-top: 2px;
-    transition: width 0.5s;
-    -webkit-transition: width 0.5s;
-    -moz-transition: width 0.5s;
-    -ms-transition: width 0.5s;
-    -o-transition: width 0.5s;
+      content: "";
+      display: block;
+      width: 0;
+      height: 3px;
+      background-color: #f5f5f3;
+      margin-top: 2px;
+      transition: width 0.5s;
+      -webkit-transition: width 0.5s;
+      -moz-transition: width 0.5s;
+      -ms-transition: width 0.5s;
+      -o-transition: width 0.5s;
 }
 
 .menu-wrapper ul a.active::after {
-    width: 90px;
+      width: 90px;
 }
 
 .menu-wrapper ul a:hover::after {
-    width: 90px;
+      width: 90px;
 }
 
 .side .menu-wrapper .info {
-    color: #fff;
-    margin: 20px 15px;
+      color: #fff;
+      margin: 20px 15px;
 }
 
 .side .menu-wrapper .info p {
-    margin: 10px 0;
+      margin: 10px 0;
 }
 
 .side .menu-wrapper .info p li {
-    text-align: center;
+      text-align: center;
 }
 
 .slider {
@@ -305,10 +311,11 @@ header .side .menu-wrapper ul li {
       font-weight: bold;
       opacity: 0;
       transition: opacity 1s ease-in-out;
-      text-shadow:  0 .3rem .5rem #000;
+      text-shadow: 0 .3rem .5rem #000;
 }
+
 .slide .slide-text h2 {
-     margin-bottom: 10px;
+      margin-bottom: 10px;
 }
 
 .prev,
@@ -374,24 +381,27 @@ main .our-company .cards .card {
       margin-bottom: 30px;
       max-width: 440px;
 }
+
 main .our-company .cards .card .btn {
       background-color: transparent;
       color: var(--main-color);
       border: 2px solid var(--main-color);
-      margin:20px auto;
+      margin: 20px auto;
       transition: all 0.4s ease;
-box-shadow:  0 .4rem .6rem #000;
+      box-shadow: 0 .4rem .6rem #000;
 }
-main .our-company .cards .card .btn:hover{
+
+main .our-company .cards .card .btn:hover {
       background-color: var(--main-color);
       color: #FFF;
 }
+
 main .our-company .cards .card img {
       display: block;
       width: 128px;
       height: 128px;
       margin: auto;
-      
+
 }
 
 main .our-products {
@@ -406,12 +416,12 @@ main .our-products h2 {
       margin: 30px 0;
 }
 
-.swiper-container { 
+.swiper-container {
       position: relative;
       width: 100%;
       max-width: 100vw;
       overflow: hidden;
-       }
+}
 
 .swiper-container .swiper-button-next::after,
 .swiper-container .swiper-button-prev::after {
@@ -427,28 +437,29 @@ main .our-products h2 {
       font-size: 17px;
 }
 
- .swiper-container .swiper-wapper{
-            width: 100%;
-            height: 100%;
-            overflow-x: hidden;
-        }
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-            flex-direction: column;
-        }
+.swiper-container .swiper-wapper {
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+}
+
+.swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      flex-direction: column;
+}
 
 .swiper-slide img {
       width: 200px;
@@ -457,8 +468,9 @@ main .our-products h2 {
       border-radius: 50%;
       margin: 15px
 }
+
 .swiper-slide h3 a {
-     color: var(--main-color);
+      color: var(--main-color);
 }
 
 
@@ -515,15 +527,17 @@ footer .footer-columns .column {
       margin: 0 15px;
       width: 30%;
 }
+
 /* footer .footer-columns .column {
       margin: 0 10px;
 } */
-footer .footer-columns .column h3{
+footer .footer-columns .column h3 {
       color: #E3E8DD;
       text-transform: uppercase;
       margin-bottom: 15px;
 }
-footer .footer-columns .column p{
+
+footer .footer-columns .column p {
       color: #E3E8DD;
       margin-bottom: 10px;
 }
@@ -539,7 +553,8 @@ hr {
 footer .copy {
       margin: 30px 0;
 }
-footer .copy span{
+
+footer .copy span {
       font-size: 1rem;
 }
 
@@ -554,194 +569,214 @@ footer .copy span{
       header .top-bar {
             display: flex;
       }
-      .slide .slide-text h1 { 
+
+      .slide .slide-text h1 {
             font-size: 1.4rem;
             text-align: center;
             margin-bottom: 15px;
       }
-      .slide .slide-text p { 
+
+      .slide .slide-text p {
             font-size: 0.9rem;
             text-align: center;
       }
-main .our-company .cards { 
-      flex-direction: column;
-      align-items: center;
-}
-.swiper-slide img {
-      width: 150px;
-      height: 150px;
-}
 
-.swiper-container .swiper-button-next::after,
-.swiper-container .swiper-button-prev::after {
-      font-size: 15px;
-}
-footer .footer-columns {
-      flex-direction: column;
-}
-footer .footer-columns .column{
-      width: 95%;
-      margin-bottom: 20px;
-}
+      main .our-company .cards {
+            flex-direction: column;
+            align-items: center;
+      }
+
+      .swiper-slide img {
+            width: 150px;
+            height: 150px;
+      }
+
+      .swiper-container .swiper-button-next::after,
+      .swiper-container .swiper-button-prev::after {
+            font-size: 15px;
+      }
+
+      footer .footer-columns {
+            flex-direction: column;
+      }
+
+      footer .footer-columns .column {
+            width: 95%;
+            margin-bottom: 20px;
+      }
 
 }
 
 /* ==============ABOUT US PAGE =======*/
-      
+
 main .about {
       background-image: url(../img/about22.jpg);
       background-repeat: no-repeat;
-      background-size:cover;
-      background-position: top left; 
+      background-size: cover;
+      background-position: top left;
       position: relative;
       width: 100%;
       height: 50vh;
       margin-bottom: 70px;
-      
+
 }
+
 main .about .layout {
-position: absolute;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-background-color: rgba(0, 0, 0, 0.5);
-display: flex;
-justify-content: center;
-align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
 }
 
 main .about h2 {
-      color: #fff; 
-      font-size: 40px; 
+      color: #fff;
+      font-size: 40px;
       letter-spacing: 3px;
-       text-shadow:  0 .3rem .5rem #4f7069;
+      text-shadow: 0 .3rem .5rem #4f7069;
 }
 
 
 
-main .aroma-egy ,
+main .aroma-egy,
 main .our-vision,
-main .our-mission{
+main .our-mission {
       display: flex;
       align-items: center;
       justify-content: space-between;
       margin: 30px 0;
-     height: 500px;
+      height: 500px;
 }
-main .aroma-egy .about-aroma, 
+
+main .aroma-egy .about-aroma,
 main .our-vision .aroma-vision,
-main .our-mission .aroma-mission{
-      flex: 1.3; 
+main .our-mission .aroma-mission {
+      flex: 1.3;
       margin-right: 20px;
 }
 
-main .our-vision .aroma-vision{
-      flex: 1.3; 
-      margin-right:0px;
+main .our-vision .aroma-vision {
+      flex: 1.3;
+      margin-right: 0px;
       margin-left: 20px;
 }
+
 main .aroma-egy .about-aroma h3,
 main .vission-header h3,
-main .our-mission .aroma-mission h3{
+main .our-mission .aroma-mission h3 {
       font-size: 30px;
       color: var(--main-color);
       margin-bottom: 15px;
 }
+
 main .aroma-egy .about-aroma h4,
-main .vission-header  h4 ,
+main .vission-header h4,
 main .our-mission .aroma-mission h4 {
       font-size: 25px;
       color: var(--main-color);
       font-weight: normal;
-      margin-bottom: 15px;    
+      margin-bottom: 15px;
 }
 
 main .vission-header {
-width: 80%;
+      width: 80%;
       margin: auto;
       text-align: center;
 }
 
-main .aroma-egy .about-aroma p ,
-main .our-vision .aroma-vision p ,
+main .aroma-egy .about-aroma p,
+main .our-vision .aroma-vision p,
 main .our-mission .aroma-mission p {
-      margin-bottom: 15px;  
-      line-height: 28px;  
+      margin-bottom: 15px;
+      line-height: 28px;
       font-size: 16px;
 }
-main .aroma-egy .aroma-img ,
-main .our-vision .vision-img ,
+
+main .aroma-egy .aroma-img,
+main .our-vision .vision-img,
 main .our-mission .mission-img {
       flex: 1;
       height: 500px;
       width: 100%;
 }
+
 main .aroma-egy .aroma-img img,
 main .our-vision .vision-img img,
-main .our-mission .mission-img img{
+main .our-mission .mission-img img {
       display: block;
       height: 100%;
       width: 100%;
       object-fit: cover;
 }
+
 main .aroma-egy .about-aroma {
       display: flex;
-    flex-direction: column;
+      flex-direction: column;
 }
+
 main .aroma-egy .btn {
       border-radius: 0px;
       width: 11rem;
       padding: 15px;
 }
-main .aroma-egy .btn span{
-     margin-left: 15px;
+
+main .aroma-egy .btn span {
+      margin-left: 15px;
 }
 
 
 /* ==============MEDIA QUERIES FOR TABLETS AND MOBILE PHONES for about page =======*/
 @media screen and (max-width:765px) {
-      main .aroma-egy ,
-main .our-vision,
-main .our-mission{
-     flex-direction: column;
-     height: auto;
-     
-} 
-main .aroma-egy .about-aroma, 
-main .our-vision .aroma-vision,
-main .our-mission .aroma-mission{ 
-      margin-right:0;
-      margin-bottom: 20px;
-}
-main .aroma-egy .aroma-img img,
-main .our-vision .vision-img img,
-main .our-mission .mission-img img{
-      height: 300px;
-      width: 80%;
-      margin: 20px auto;
-}
-main .aroma-egy .about-aroma h3,
-main .vission-header h3,
-main .our-mission .aroma-mission h3{
-      font-size: 25px
-}
-main .aroma-egy .about-aroma h4,
-main .vission-header  h4 ,
-main .our-mission .aroma-mission h4 {
-      font-size: 20px
-}
 
-main .vission-header {
-width: 90%;
-      margin: 0 10px;
-      text-align: left;
-}
+      main .aroma-egy,
+      main .our-vision,
+      main .our-mission {
+            flex-direction: column;
+            height: auto;
 
-main .aroma-egy .btn {
-     margin: auto;
-     justify-self: center;
-}
+      }
+
+      main .aroma-egy .about-aroma,
+      main .our-vision .aroma-vision,
+      main .our-mission .aroma-mission {
+            margin-right: 0;
+            margin-bottom: 20px;
+      }
+
+      main .aroma-egy .aroma-img img,
+      main .our-vision .vision-img img,
+      main .our-mission .mission-img img {
+            height: 300px;
+            width: 80%;
+            margin: 20px auto;
+      }
+
+      main .aroma-egy .about-aroma h3,
+      main .vission-header h3,
+      main .our-mission .aroma-mission h3 {
+            font-size: 25px
+      }
+
+      main .aroma-egy .about-aroma h4,
+      main .vission-header h4,
+      main .our-mission .aroma-mission h4 {
+            font-size: 20px
+      }
+
+      main .vission-header {
+            width: 90%;
+            margin: 0 10px;
+            text-align: left;
+      }
+
+      main .aroma-egy .btn {
+            margin: auto;
+            justify-self: center;
+      }
 }
 
 
@@ -752,31 +787,32 @@ main .aroma-egy .btn {
 main .contact {
       background-image: url(../img/contact.jpg);
       background-repeat: no-repeat;
-      background-size:cover;
-      background-position: center center; 
+      background-size: cover;
+      background-position: center center;
       position: relative;
       width: 100%;
       height: 50vh;
       margin-bottom: 70px;
-      
+
 }
+
 main .contact .layout {
-position: absolute;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-background-color: rgba(0, 0, 0, 0.5);
-display: flex;
-justify-content: center;
-align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
 }
 
 main .contact h2 {
-      color: #fff; 
-      font-size: 40px; 
+      color: #fff;
+      font-size: 40px;
       letter-spacing: 3px;
-       text-shadow:  0 .3rem .5rem #4f7069;
+      text-shadow: 0 .3rem .5rem #4f7069;
 }
 
 
@@ -786,66 +822,71 @@ main .contact-us {
       height: 500px;
       margin-bottom: 70px;
 }
+
 main .contact-us .contact-us-form {
       flex: 1;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: rgba(0, 68, 56 , 0.7);
+      background-color: rgba(0, 68, 56, 0.7);
       margin-right: 30px;
       border-radius: 5px;
 }
+
 main .contact-us .contact-us-form h3 {
-       margin:30px 0;
-       font-size: 30px;
-       font-weight: bold;
-       color: #FFF;
+      margin: 30px 0;
+      font-size: 30px;
+      font-weight: bold;
+      color: #FFF;
 }
-main .contact-us .contact-us-form form{
+
+main .contact-us .contact-us-form form {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       width: 80%;
 }
+
 main .contact-us .contact-us-form label {
-  position: absolute;
-  left: -9999px;
+      position: absolute;
+      left: -9999px;
 }
 
 main .contact-us .contact-us-form input {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 15px;
-  border-radius: 5px;
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 5px;
 }
 
 main .contact-us .contact-us-form textarea {
-  width: 100%;
-  margin-bottom: 30px;
-  padding: 15px;
-  min-height: 200px;
-  resize: none;
-  border-radius: 5px;
+      width: 100%;
+      margin-bottom: 30px;
+      padding: 15px;
+      min-height: 200px;
+      resize: none;
+      border-radius: 5px;
 }
 
 main .contact-us .contact-us-form form .btn {
       border-radius: 20px;
       width: 100%;
-       background-color: rgba(0, 68, 56 , 0.7);
-       margin-bottom: 30px;
+      background-color: rgba(0, 68, 56, 0.7);
+      margin-bottom: 30px;
 }
 
 main .contact-us .contact-us-info {
-      flex:1.4;
+      flex: 1.4;
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
       align-items: center;
-      
+
 }
-main .contact-us .contact-us-info > div {
+
+main .contact-us .contact-us-info>div {
       width: 40%;
       display: flex;
       flex-direction: column;
@@ -853,16 +894,19 @@ main .contact-us .contact-us-info > div {
       align-items: center;
       margin-bottom: 30px;
 }
-main .contact-us .contact-us-info > div i{
+
+main .contact-us .contact-us-info>div i {
       font-size: 2rem;
       color: var(--main-color);
       margin-bottom: 8px;
 }
-main .contact-us .contact-us-info > div span{
+
+main .contact-us .contact-us-info>div span {
       font-size: 1.5rem;
       margin-bottom: 8px;
 }
-main .contact-us .contact-us-info > div p{
+
+main .contact-us .contact-us-info>div p {
       font-size: 1.1rem
 }
 
@@ -874,13 +918,15 @@ main .contact-us .contact-us-info > div p{
             flex-direction: column;
             height: auto;
       }
+
       main .contact-us .contact-us-form {
             height: auto;
             width: 90%;
             margin: 30px auto;
       }
+
       main .contact-us .contact-us-form form .btn {
-      width: 80%;
+            width: 80%;
       }
 
       main .contact-us .contact-us-info {
@@ -888,12 +934,50 @@ main .contact-us .contact-us-info > div p{
             margin: 30px auto;
       }
 
-      main .contact-us .contact-us-info > div span{
-      font-size: 1.2rem;
-      margin-bottom: 8px;
-}
-main .contact-us .contact-us-info > div p{
-      font-size: 0.9rem
+      main .contact-us .contact-us-info>div span {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+      }
+
+      main .contact-us .contact-us-info>div p {
+            font-size: 0.9rem
+      }
+
 }
 
+
+/* ==============CERTIFICATION US PAGE =======*/
+
+main .certifications {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 70%;
+      margin: 50px auto;
+
+}
+
+main .certifications .certificate {
+      flex: 1;
+      height: 500px;
+      margin: 20px;
+}
+
+main .certifications .certificate img {
+      width: 100%;
+      height: 100%;
+      display: block;
+}
+
+
+/* ==============MEDIA QUERIES FOR TABLETS AND MOBILE PHONES for certification page =======*/
+@media screen and (max-width:765px) {
+      main .certifications {
+            flex-direction: column;
+
+      }
+
+      main .certifications .certificate {
+            width: 100%;
+      }
 }

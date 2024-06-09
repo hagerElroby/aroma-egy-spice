@@ -596,6 +596,11 @@ footer .copy span {
             font-size: 15px;
       }
 
+      .project .box-container .box {
+            height: 17rem;
+            width: 80%
+      }
+
       footer .footer-columns {
             flex-direction: column;
       }

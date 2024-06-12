@@ -1,20 +1,9 @@
 :root {
-      /*    
-      --border-radius:2rem;
-      --card-border-radius:1rem;
-      --btn-padding:0.6rem 2rem;
-      --search-padding:0.6rem 1rem;
-      --card-padding:1rem;   
-      --sticy-top-left:5.4rem;
-      --sticy-top-right:-18rem */
-
       --white-color: #fff;
       --main-color: #004438;
       --black-color: #000;
       --second-color: #4f7069;
       --bg-color: #f5f5f3;
-
-
 }
 
 *,
@@ -76,14 +65,19 @@ img {
       opacity: 0.8;
 }
 
-
-
-.text-bold {
-      font-weight: 500;
+.section-title {
+      font-weight: bold;
+      text-align: center;
+      font-size: 40px;
+      color: var(--main-color);
+      margin-bottom: 15px;
 }
 
-.text-muted {
-      color: var(--color-gray);
+.section-p {
+      font-size: 20px;
+      width: 90%;
+      margin: 40px auto;
+      color: #7e8483
 }
 
 /*==========HEADER==========*/
@@ -301,7 +295,7 @@ header .side .menu-wrapper ul li {
       left: 0;
       bottom: 0;
       right: 0;
-      background-color: rgba(0, 0, 0, 0.3)
+      background-color: rgba(0, 0, 0, 0.4)
 }
 
 .slide .slide-text {
@@ -312,11 +306,25 @@ header .side .menu-wrapper ul li {
       opacity: 0;
       transition: opacity 1s ease-in-out;
       text-shadow: 0 .3rem .5rem #000;
+      width: 80%;
+
 }
 
-.slide .slide-text h2 {
-      margin-bottom: 10px;
+.slide .slide-text h1 {
+      margin-bottom: 15px;
+      text-transform: uppercase;
 }
+
+.slide .slide-text p {
+      margin-bottom: 20px;
+      font-weight: normal;
+
+}
+
+.slide .slide-text .btn a {
+      color: #fff
+}
+
 
 .prev,
 .next {
@@ -358,9 +366,6 @@ main .our-company .about-img img {
 
 }
 
-main .our-company .about-title {
-      text-align: center;
-}
 
 main .our-company .cards {
       display: flex;
@@ -404,6 +409,53 @@ main .our-company .cards .card img {
 
 }
 
+/*==========WELCOME==========*/
+.welcome {
+      margin-bottom: 50px;
+}
+
+/* .welcome h2 {
+      font-weight: bold;
+      text-align: center;
+      font-size: 40px;
+      color: var(--main-color);
+      margin-bottom: 15px;
+      
+} */
+
+.welcome h3 {
+      font-weight: bold;
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 20px;
+}
+
+.welcome .categories {
+      display: flex;
+      justify-content: space-between;
+
+}
+
+.welcome .categories div {
+      flex: 1;
+      margin: 0 20px;
+      transition: all .5s ease;
+      cursor: pointer;
+}
+
+.welcome .categories div:hover {
+      transform: scale(1.1);
+}
+
+.welcome .categories div img {
+      width: 100%;
+      border-radius: 15px;
+}
+
+
+
+
+/*==========our-products==========*/
 main .our-products {
       margin: 50px 0;
       display: flex;
@@ -542,6 +594,13 @@ footer .footer-columns .column p {
       margin-bottom: 10px;
 }
 
+footer .footer-columns .social a {
+      color: #CCC;
+      font-size: 1.5rem;
+      margin: 10px;
+      display: inline-block;
+}
+
 hr {
       color: #E3E8DD;
       width: 95%;
@@ -551,7 +610,8 @@ hr {
 }
 
 footer .copy {
-      margin: 30px 0;
+      margin: 30px auto;
+      text-align: center;
 }
 
 footer .copy span {
@@ -571,19 +631,36 @@ footer .copy span {
       }
 
       .slide .slide-text h1 {
-            font-size: 1.4rem;
-            text-align: center;
+            font-size: 1.6rem;
             margin-bottom: 15px;
       }
 
       .slide .slide-text p {
-            font-size: 0.9rem;
-            text-align: center;
+            font-size: 1.2rem;
+
       }
 
       main .our-company .cards {
             flex-direction: column;
             align-items: center;
+      }
+
+      .section-title {
+            font-size: 30px;
+      }
+
+      .welcome h3 {
+            font-size: 25px;
+      }
+
+      .welcome .categories {
+            flex-direction: column;
+            height: auto;
+      }
+
+      .welcome .categories div {
+            margin: 20px auto;
+            width: 85%;
       }
 
       .swiper-slide img {
@@ -610,12 +687,15 @@ footer .copy span {
             margin-bottom: 20px;
       }
 
+      footer .copy {
+            font-size: 0.9rem
+      }
 }
 
 /* ==============ABOUT US PAGE =======*/
 
 main .about {
-      background-image: url(../img/about22.jpg);
+      background-image: url(about22.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: top left;
@@ -790,7 +870,7 @@ main .aroma-egy .btn span {
 /* ==============CONTACT US PAGE =======*/
 
 main .contact {
-      background-image: url(../img/contact.jpg);
+      background-image: url(contact.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
@@ -824,63 +904,12 @@ main .contact h2 {
 
 main .contact-us {
       display: flex;
-      height: 500px;
+      height: 300px;
       margin-bottom: 70px;
-}
-
-main .contact-us .contact-us-form {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      background-color: rgba(0, 68, 56, 0.7);
-      margin-right: 30px;
-      border-radius: 5px;
 }
 
-main .contact-us .contact-us-form h3 {
-      margin: 30px 0;
-      font-size: 30px;
-      font-weight: bold;
-      color: #FFF;
-}
-
-main .contact-us .contact-us-form form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 80%;
-}
-
-main .contact-us .contact-us-form label {
-      position: absolute;
-      left: -9999px;
-}
-
-main .contact-us .contact-us-form input {
-      width: 100%;
-      margin-bottom: 20px;
-      padding: 15px;
-      border-radius: 5px;
-}
-
-main .contact-us .contact-us-form textarea {
-      width: 100%;
-      margin-bottom: 30px;
-      padding: 15px;
-      min-height: 200px;
-      resize: none;
-      border-radius: 5px;
-}
-
-main .contact-us .contact-us-form form .btn {
-      border-radius: 20px;
-      width: 100%;
-      background-color: rgba(0, 68, 56, 0.7);
-      margin-bottom: 30px;
-}
 
 main .contact-us .contact-us-info {
       flex: 1.4;
@@ -915,6 +944,37 @@ main .contact-us .contact-us-info>div p {
       font-size: 1.1rem
 }
 
+main .contact-us .contact-us-img {
+      flex: 1;
+      height: 100%;
+}
+
+main .contact-us .contact-us-img img {
+
+      display: block;
+      object-fit: cover;
+      border-radius: 10px;
+}
+
+main .visit-us .container {
+      margin: 50px auto;
+      text-align: center;
+}
+
+main .visit-us .container h2 {
+      margin-bottom: 20px;
+}
+
+main .visit-us .container p {
+      margin-bottom: 20px;
+      font-size: 20px;
+}
+
+main .visit-us .container .map iframe {
+      width: 95%;
+      height: 450px;
+}
+
 
 /* ==============MEDIA QUERIES FOR TABLETS AND MOBILE PHONES for about page =======*/
 @media screen and (max-width:765px) {
@@ -924,19 +984,15 @@ main .contact-us .contact-us-info>div p {
             height: auto;
       }
 
-      main .contact-us .contact-us-form {
-            height: auto;
-            width: 90%;
-            margin: 30px auto;
-      }
-
-      main .contact-us .contact-us-form form .btn {
-            width: 80%;
-      }
 
       main .contact-us .contact-us-info {
             height: auto;
             margin: 30px auto;
+            flex-direction: column;
+      }
+
+      main .contact-us .contact-us-info>div {
+            width: 90%;
       }
 
       main .contact-us .contact-us-info>div span {

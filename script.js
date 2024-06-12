@@ -21,7 +21,7 @@
             
             setTimeout(() => {
                 text.style.opacity = 1;
-            }, 500);
+            }, 900);
         }
 
         prev.addEventListener('click', () => showSlide(currentIndex - 1));
@@ -39,7 +39,7 @@ var swiper = new Swiper('.swiper-container', {
     
     loop: true,
     autoplay: {
-        delay: 3000,
+        delay: 1500,
         disableOnInteraction: false,
     },
     navigation: {

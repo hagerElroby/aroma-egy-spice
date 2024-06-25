@@ -416,8 +416,11 @@ main .our-company .cards .card .btn {
       box-shadow: 0 .4rem .6rem #000;
 }
 
-main .our-company .cards .card .btn:hover {
+main .our-company .cards .card .btn:hover{
       background-color: var(--main-color);
+      color: #FFF;
+}
+main .our-company .cards .card .btn:hover a{
       color: #FFF;
 }
 
@@ -839,10 +842,10 @@ footer .copy span {
 /* ==============ABOUT US PAGE =======*/
 
 main .about {
-      background-image: url(about22.jpg);
+      background-image: url(banner3.jpg);
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center;
+      background-position: right center;
       position: relative;
       width: 100%;
       height: 50vh;
@@ -879,8 +882,9 @@ main .our-mission {
       align-items: center;
       justify-content: space-between;
       margin: 30px 0;
-      height: 500px;
+      min-height: 500px;
 }
+
 
 main .aroma-egy .about-aroma,
 main .our-vision .aroma-vision,
@@ -889,6 +893,11 @@ main .our-mission .aroma-mission {
       margin-right: 20px;
 }
 
+main .vission {
+      background-color: rgba(68, 83, 60,0.1);
+      width: 100%;
+      padding: 20px;
+}
 main .our-vision .aroma-vision {
       flex: 1.3;
       margin-right: 0px;
@@ -954,6 +963,7 @@ main .aroma-egy .btn {
       padding: 15px;
 }
 
+main .aroma-egy .btn a{color: #FFF;}
 main .aroma-egy .btn span {
       margin-left: 15px;
 }
@@ -1146,6 +1156,109 @@ main .products .products-card .product-card{
 
 
 
+/* ==============PRODUCTION PAGE =======*/
+
+main .production {
+      background-image: url(sliders-2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top center;
+      position: relative;
+      width: 100%;
+      height: 50vh;
+      margin-bottom: 70px;
+      background-attachment: fixed;
+
+}
+
+main .production .layout {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+main .production h2 {
+      color: #fff;
+      font-size: 40px;
+      letter-spacing: 3px;
+      text-shadow: 0 .3rem .5rem #4f7069;
+}
+
+main .production-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    padding: 10px;
+    min-height: 800px;
+    margin: 10px;
+}
+main .production-container .production-img{
+      height: 600px;
+      width: 30%;
+      margin: 20px;
+}
+main .production-container .production-img img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+}
+
+/* ==============MEDIA QUERIES FOR TABLETS AND MOBILE PHONES for about page =======*/
+@media screen and (max-width:765px) {
+
+      main .production-container {
+    height:auto
+}
+main .production-container .production-img{
+      width: 99%;
+      margin: 20px auto;
+      height: 80%;
+}
+}
+
+/* ==============CERTIFICATION PAGE =======*/
+
+main .certification {
+      background-image: url(banner3.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right center;
+      position: relative;
+      width: 100%;
+      height: 50vh;
+      margin-bottom: 70px;
+      background-attachment: fixed;
+
+}
+
+main .certification .layout {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+main .certification h2 {
+      color: #fff;
+      font-size: 40px;
+      letter-spacing: 3px;
+      text-shadow: 0 .3rem .5rem #4f7069;
+}
+
+
+
+
 
 /* ==============CONTACT US PAGE =======*/
 
@@ -1158,8 +1271,10 @@ main .contact {
       width: 100%;
       height: 50vh;
       margin-bottom: 70px;
+      background-attachment: fixed;
 
 }
+
 
 main .contact .layout {
       position: absolute;
@@ -1180,7 +1295,9 @@ main .contact h2 {
       text-shadow: 0 .3rem .5rem #4f7069;
 }
 
-
+.contact-main .container h2 {
+      margin-bottom: 20px;
+}
 
 main .contact-us {
       display: flex;
@@ -1221,7 +1338,9 @@ main .contact-us .contact-us-info>div span {
 }
 
 main .contact-us .contact-us-info>div p {
-      font-size: 1.1rem
+      font-size: 1.1rem;
+      text-align: center;
+      color: #7e8483
 }
 
 main .contact-us .contact-us-img {
@@ -1321,4 +1440,39 @@ main .certifications .certificate img {
       main .certifications .certificate {
             width: 100%;
       }
+}
+
+
+/* ==============GALLERY PAGE =======*/
+
+main .gallery {
+      background-image: url(lookbook-bg_1440x547.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right center;
+      position: relative;
+      width: 100%;
+      height: 50vh;
+      margin-bottom: 70px;
+      background-attachment: fixed;
+
+}
+
+main .gallery .layout {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+main .gallery h2 {
+      color: #fff;
+      font-size: 40px;
+      letter-spacing: 3px;
+      text-shadow: 0 .3rem .5rem #4f7069;
 }

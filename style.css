@@ -1095,29 +1095,31 @@ main .products .products-card .product-card{
       margin: 0 20px;
       background-color: #ebf0e7;
 }
-.card-list {
+.products .card-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
 }
-/* .card {
+.products .cardProduct {
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 10px;
     margin: 10px;
     background-color: #fff;
     text-align: center;
-    width: 150px;
+    width: 200px;
+    cursor: pointer;
 }
 
-.card img {
+.products .cardProduct img {
     width: 100%;
-    height: auto;
+    height: 80%;
     border-radius: 4px;
-} */
+    object-fit: cover;
+}
 
-.show-more {
+/* .products .show-more {
     margin: 20px;
     padding: 10px 20px;
     background-color: #007bff;
@@ -1125,19 +1127,19 @@ main .products .products-card .product-card{
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
-
-.show-more:hover {
+} */
+/* 
+.products .show-more:hover {
     background-color: #0056b3;
-}
+} */
 
-.pagination {
+.products .pagination {
     display: flex;
     justify-content: center;
     margin: 20px 0;
 }
 
-.page-button {
+.products .page-button {
     margin: 0 5px;
     padding: 10px 15px;
     border: none;
@@ -1145,15 +1147,113 @@ main .products .products-card .product-card{
     cursor: pointer;
 }
 
-.page-button.active {
-    background-color: #007bff;
+.products .page-button.active {
+    background-color: var(--main-color);
     color: #fff;
 }
 
-.page-button:hover:not(.active) {
+.products .page-button:hover:not(.active) {
     background-color: #ddd;
 }
 
+
+
+/* ==============MEDIA QUERIES FOR TABLETS AND MOBILE PHONES for about page =======*/
+@media screen and (max-width:765px) {
+      main .our-products-page h2 {
+      font-size: 30px;
+      margin: auto 20px;
+}
+}
+
+
+/* ==============PRODUCT DETAILS =======*/
+.productDetails{
+      margin: 40px;
+      padding: 40px;
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+      gap: 20px;
+       height: 80vh;
+}
+
+.productDetails .productDetailsImg{
+      
+      overflow: hidden;
+      border: 2px solid #dee4d8;
+      box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+padding: 5px;
+transition: all 0.5s ease;
+width: 40%;
+   
+}
+.productDetails .productDetailsImg:hover{
+    transform: scale(1.2);
+
+   
+}
+.productDetails .productDetailsImg img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.productDetails .productDetailsInfo{
+width: 40%;
+}
+.productDetails .productDetailsInfo h2{
+font-size: 40px;
+margin: 30px;
+font-weight: 800;
+color: var(--main-color);
+}
+.productDetails .productDetailsInfo p{
+font-size: 20px;
+margin: 10px;
+}
+.productDetails .productDetailsInfo p span{
+   color: #7e8483
+}
+
+
+
+/* ==============MEDIA QUERIES FOR TABLETS AND MOBILE PHONES for about page =======*/
+@media screen and (max-width:765px) {
+
+      main .our-products-page h2 {
+      font-size: 30px;
+      margin: auto 20px;
+}
+      .productDetails{
+            flex-direction: column;
+             justify-content:center;
+       height: auto;
+       padding: 20px;
+       margin: 20px;
+      }
+      .productDetails .productDetailsImg {
+            width: 90%;
+            max-height: 60vh;
+            margin-bottom: 30px;
+      }
+      .productDetails .productDetailsInfo {
+            width: 90%;
+            margin: auto;
+      }
+
+      .productDetails .productDetailsInfo h2{
+font-size: 30px;
+margin: 30px 5px;
+font-weight: 600;
+color: var(--main-color);
+text-align: center;
+}
+.productDetails .productDetailsInfo p{
+font-size: 17px;
+margin: 10px 5px;
+}
+}
 
 
 /* ==============PRODUCTION PAGE =======*/
@@ -1475,4 +1575,63 @@ main .gallery h2 {
       font-size: 40px;
       letter-spacing: 3px;
       text-shadow: 0 .3rem .5rem #4f7069;
+}
+
+.gallery-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      min-height: 400px;
+      padding: 10px;
+      margin: 10px;
+}
+
+.gallery-section .gallery-container {
+      position: relative;
+      width: 280px;
+      height: 280px;
+      margin: 20px 0;
+}
+
+.gallery-section .gallery-container .gallery-layout {
+      position: absolute;
+      top:50%;
+      left: 50%;
+      width: 70%;
+      height: 70%;
+      transform: translate(-50%,-50%);
+      background-color: #44533c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #FFF;
+      opacity: 0;
+      transition: all 0.4s ease;
+}
+
+.gallery-section .gallery-container:hover .gallery-layout {
+      opacity: 1;
+}
+
+.gallery-section .gallery-container .gallery-img{
+      width: 100%;
+      height: 100%;
+}
+.gallery-section .gallery-container .gallery-img img{
+      width: 100%;
+      height: 100%;
+      display: block;
+}
+
+/* ==============MEDIA QUERIES FOR TABLETS AND MOBILE PHONES for certification page =======*/
+@media screen and (max-width:650px) {
+.gallery-section {
+      flex-direction: column;
+}
+.gallery-section .gallery-container {
+      width: 80%;
+      height: auto;
+      margin: 20px auto;
+}
 }

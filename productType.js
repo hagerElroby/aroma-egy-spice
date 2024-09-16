@@ -21,7 +21,8 @@ const renderCards = (page = 1, filteredProducts) => {
         cardProduct.className = 'cardProduct';
         cardProduct.innerHTML = `
             <img src="${product.image}" alt="${product.title}">
-            <h2>${product.title}</h2>
+            
+             <button> Discover</button>
         `;
         cardProduct.addEventListener('click', () => {
             window.location.href = `product.html?id=${product.id}`;

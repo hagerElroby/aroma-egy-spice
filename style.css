@@ -1164,6 +1164,9 @@ main .products .products-card .product-card{
       font-size: 30px;
       margin: auto 20px;
 }
+main .collections .collections-types{ 
+      flex-direction: column;
+}
 }
 
 
